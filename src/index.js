@@ -40,9 +40,6 @@ export default class SwipeUpDown extends Component{
     this.checkCollapsed = true;
     this.showMini = this.showMini.bind(this);
     this.showFull = this.showFull.bind(this);
-  }
-
-  componentWillMount() {
     this._panResponder = PanResponder.create({
       onMoveShouldSetPanResponder: (event, gestureState) => {
 	console.log('_onMoveShouldSetPanResponder__', gestureState.dx, gestureState.dy);
